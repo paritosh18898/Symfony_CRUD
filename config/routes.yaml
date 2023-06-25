@@ -3,3 +3,15 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+update:
+  path: /update/{id}
+  controller: App\Controller\MainController::update
+
+delete:
+  path: /delete/{id}
+  controller: App\Controller\MainController::delete
+
+success:
+  path: /success
+  controller: App\Controller\MainController::index
